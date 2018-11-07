@@ -64,8 +64,20 @@ def batchnorm(x, train_phase, scope_bn, y1=None, y2=None, alpha=1.):
         normed = tf.nn.batch_normalization(x, mean, var, beta, gamma, 1e-3)
     return normed
 ```
+#### What is projection?
+``` python
+def Inner_product(global_pooled, y):
+    #global_pooled: B x D,   embeded_y: B x Num_label
+    H = y.shape[-1]
+    W = global_pooled.shape[-1]
+    V = tf.get_variable("V", [H, W], initializer=tf.truncated_normal_initializer(stddev=0.02))
+    V = spectral_normalization("embed", V)
+    temp = tf.matmul(y, V)
+    temp = tf.reduce_sum(temp * global_pooled, axis=1)
+    return temp
+```
 ## Results
-### More results is under training ......
+### More results are under training ......
 As shown in below is trained about 10000 iterations with batch size of 64.
 
 ![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/generate.jpg)
