@@ -32,6 +32,7 @@ def spectral_normalization(name, W, Ip=1):
     return W_sn
 ```
 #### What is conditional batch normalization?
+More details about 'condition', please see this repository: [Conditional Instance Normalization](https://github.com/MingtaoGuo/Conditional-Instance-Norm-for-n-Style-Transfer)
 ``` python
 def batchnorm(x, train_phase, scope_bn, y1=None, y2=None, alpha=1.):
     with tf.variable_scope(scope_bn):
