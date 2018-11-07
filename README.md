@@ -76,6 +76,45 @@ def Inner_product(global_pooled, y):
     temp = tf.reduce_sum(temp * global_pooled, axis=1)
     return temp
 ```
+## How to use
+1. Download the [ImageNet_64x64](https://patrykchrabaszcz.github.io/Imagenet32/) dataset 
+   PS. If necessary, you can contact me, E-mail: 798714378@hotmail.com, i will send a part of dataset to you :stuck_out_tongue_winking_eye:.
+2. put the imagenet dataset into the folder 'dataset'
+```
+├── dataset
+    ├── 1
+        ├── 0.jpg
+        ├── 1.jpg
+        ...
+    ├── 2
+        ├── 0.jpg
+        ├── 1.jpg
+        ...
+    ├── 3
+        ├── 0.jpg
+        ├── 1.jpg
+        ...
+    ...
+    ├── 1000
+        ├── 0.jpg
+        ├── 1.jpg
+        ...
+├── save_para
+├── save_img
+├── results
+├── main.py
+├── networks.py
+├── ops.py
+├── Train.py
+├── utils.py
+```
+3. execute main.py
+## Requirements
+- python3.5
+- tensorflow1.4.0
+- numpy
+- scipy
+- pillow
 ## Results
 ### More results are under training ......
 As shown in below is trained about 10000 iterations with batch size of 64.
