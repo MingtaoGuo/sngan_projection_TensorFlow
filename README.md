@@ -78,7 +78,7 @@ def Inner_product(global_pooled, y):
 ```
 ## How to use
 1. Download the [ImageNet_64x64](https://patrykchrabaszcz.github.io/Imagenet32/) dataset. 
-     *PS.* If necessary, you can contact me, E-mail: 798714378@hotmail.com, i will send a part of dataset to you :stuck_out_tongue_winking_eye:.
+     *PS.* If necessary, you can contact me, E-mail: gmt798714378@hotmail.com, i will send a part of dataset to you :stuck_out_tongue_winking_eye:.
 2. put the imagenet dataset into the folder 'dataset'
 ```
 ├── dataset
