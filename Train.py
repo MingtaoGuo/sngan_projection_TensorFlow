@@ -33,7 +33,7 @@ def test():
         a = a / 10
         generate(z_np, "./results//", 0, 1, a, target, sess, z, train_phase, y1, y2, alpha)
 
-def Train(batch_size=50, z_dim=100, c_nums=2, img_h=64, img_w=64, img_c=3, lr=2e-4, beta1=0., beta2=0.9, train_itr=100000, path="E://数据集//Celeba_part//", path_train_img="./save_img//", path_save_para="./save_para//"):
+def Train(batch_size=50, z_dim=100, c_nums=2, img_h=64, img_w=64, img_c=3, lr=2e-4, beta1=0., beta2=0.9, train_itr=100000, path="./dataset//", path_train_img="./save_img//", path_save_para="./save_para//"):
     x = tf.placeholder(tf.float32, [batch_size, img_h, img_w, img_c])
     train_phase = tf.placeholder(tf.bool)
     y1 = tf.placeholder(tf.float32, [1, c_nums])
