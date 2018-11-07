@@ -78,8 +78,8 @@ def Inner_product(global_pooled, y):
 ```
 ## How to use
 1. Download the [ImageNet_64x64](https://patrykchrabaszcz.github.io/Imagenet32/) dataset. 
-     *PS.* If necessary, you can contact me, E-mail: gmt798714378@hotmail.com, i will send a part of dataset to you :stuck_out_tongue_winking_eye:.
-2. put the imagenet dataset into the folder 'dataset'
+     *PS.* If necessary, you can contact me, E-mail: gmt798714378@hotmail.com, i will send a part of dataset to you :stuck_out_tongue_winking_eye:.  
+2. Put the imagenet dataset into the folder 'dataset'
 ```
 ├── dataset
     ├── 1
@@ -108,7 +108,7 @@ def Inner_product(global_pooled, y):
 ├── Train.py
 ├── utils.py
 ```
-3. execute main.py
+3. Execute main.py
 ## Requirements
 - python3.5
 - tensorflow1.4.0
@@ -125,3 +125,6 @@ As shown in below is trained about 10000 iterations with batch size of 64.
 |cat2human|cat2human|zi2zi|zi2zi|
 |-|-|-|-|
 |![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/1.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/2.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character1.gif)|
+### Acknowledgement
+[sngan_projection](https://github.com/pfnet-research/sngan_projection)  
+        Author: pfnet-research
