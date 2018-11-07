@@ -104,9 +104,3 @@ def to_img(src_path, dst_path):
                 os.mkdir(dst_path+str(labels[i]))
             Image.fromarray(np.uint8(img)).save(dst_path + str(labels[i]) + "//" + filename + "_" + str(labels[i]) + "_" + str(i) + ".jpg")
         print(filename)
-
-# to_img("E://数据集//Imagenet64_train_part2//", "E://数据集//Imagenet64//")
-# aa = unpickle("E://数据集//Imagenet64_train_part1//train_data_batch_1")
-# aaa = 0
-# path = "E://数据集//Celeba_part//"
-# random_face_batch(path, 64)
