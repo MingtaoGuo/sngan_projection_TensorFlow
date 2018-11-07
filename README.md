@@ -126,5 +126,6 @@ As shown in below is trained about 10000 iterations with batch size of 64.
 |-|-|-|-|
 |![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/1.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/2.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character1.gif)|
 ### Acknowledgement
-[sngan_projection](https://github.com/pfnet-research/sngan_projection)  
-        Author: pfnet-research
+[Author's chainer code](https://github.com/pfnet-research/sngan_projection)  
+### Reference
+[1]. Miyato T, Koyama M. cGANs with Projection Discriminator[J]. 2018.
