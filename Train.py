@@ -73,6 +73,3 @@ def Train(batch_size=50, z_dim=100, c_nums=2, img_h=64, img_w=64, img_c=3, lr=2e
         if itr % 500 == 0:
             saver.save(sess, path_save_para+"model.ckpt")
 
-if __name__ == "__main__":
-    # Train()
-    test()
