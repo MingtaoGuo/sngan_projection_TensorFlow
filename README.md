@@ -5,6 +5,15 @@ Simply implementing the paper: cGANs with Projection Discriminator
 SNGAN with projection discriminator implemented by TensorFlow. The paper [cGANs with Projection Discriminator](https://arxiv.org/pdf/1802.05637v1.pdf)
 
 ![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/projection.jpg)
+## Results
+### More results are under training ......
+As shown in below is trained about 10000 iterations with batch size of 64.
+
+![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/generate.jpg)
+#### Consecutive category morphing with fixed z:
+|cat2human|cat2human|zi2zi|zi2zi|
+|-|-|-|-|
+|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/1.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/2.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character1.gif)|
 
 #### What is spectral norm?
 ``` python
@@ -116,16 +125,7 @@ def Inner_product(global_pooled, y):
 - numpy
 - scipy
 - pillow
-## Results
-### More results are under training ......
-As shown in below is trained about 10000 iterations with batch size of 64.
 
-![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/generate.jpg)
-
-#### Consecutive category morphing with fixed z:
-|cat2human|cat2human|zi2zi|zi2zi|
-|-|-|-|-|
-|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/1.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/2.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character.gif)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/character1.gif)|
 ### Acknowledgement
 [Author's chainer code](https://github.com/pfnet-research/sngan_projection)  
 ### Reference
