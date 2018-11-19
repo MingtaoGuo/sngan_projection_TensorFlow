@@ -5,7 +5,7 @@ class Generator:
         self.name = name
 
     def __call__(self, inputs, train_phase, y1, y2, alpha):
-        ch = 256 # paper: 1024
+        ch = 512 # paper: 1024
         with tf.variable_scope(name_or_scope=self.name, reuse=tf.AUTO_REUSE):
             inputs = Linear("Linear", inputs, ch*2*2)
             inputs = tf.reshape(inputs, [-1, 2, 2, ch])
@@ -26,7 +26,7 @@ class Discriminator:
         self.name = name
 
     def __call__(self, inputs, y):
-        ch = 256 # paper: 1024
+        ch = 512 # paper: 1024
         with tf.variable_scope(name_or_scope=self.name, reuse=tf.AUTO_REUSE):
             inputs = D_ResBlock("ResBlock1", inputs, 3, 3, ch//16)
             inputs = D_ResBlock("ResBlock2", inputs, 3, ch//16, ch//8)
