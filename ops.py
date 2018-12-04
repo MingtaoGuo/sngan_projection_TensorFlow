@@ -48,6 +48,8 @@ def max_singular_value(W, u=None, Ip=1):
     for _ in range(Ip):
         _v = _l2normalize(tf.matmul(_u, W), eps=1e-12)
         _u = _l2normalize(tf.matmul(_v, W, transpose_b=True), eps=1e-12)
+    _v = tf.stop_gradient(_v)
+    _u = tf.stop_gradient(_u)
     sigma = tf.reduce_sum(tf.matmul(_u, W) * _v)
     return sigma, _u, _v
 
