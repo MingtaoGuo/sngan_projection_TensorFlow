@@ -1,0 +1,1 @@
+put cifar-10 dataset into this folder
