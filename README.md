@@ -8,9 +8,7 @@ SNGAN with projection discriminator implemented by TensorFlow. The paper [cGANs 
 ## Results
 ### More results are under training ......
 ### Generate cifar-10
-|airplane|automobile|bird|cat|deer|dog|frog|horse|ship|truck|
-|-|-|-|-|-|-|-|-|-|-|
-|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/0.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/1.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/2.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/3.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/4.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/5.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/6.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/7.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/8.jpg)|![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/9.jpg)|
+![](https://github.com/MingtaoGuo/sngan_projection_TensorFlow/blob/master/IMAGES/cifar.jpg)
 
 As shown in below is trained about 10000 iterations with batch size of 64.
 
